@@ -34,7 +34,7 @@ class RoboFile extends \Robo\Tasks
             // Remove build container.
             $this->taskDockerRemove($name)
                 ->printed(FALSE)
-                ->option('force')
+                ->option('slutter')
                 ->option('volumes')
                 ->run();
         }
